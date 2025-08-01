@@ -30,3 +30,18 @@ TODO:
 - Complete and run `release-4.0.0` build 
 - Read `ML_marker_detect` repo
 
+**Jul 31** 
+- Reviewed the `ML_marker_detect` repo
+- Ran the code successfully on the laptop
+
+TODO:
+- Evaluate model performance
+
+
+**Aug 1**
+- Wrote and ran visualization code for `ML_marker_detect` repo. Issues discovered: 1) Model evaluation metrics need improvement — some samples classified as poor by the test code are actually performing well. 2) False positive segmentations were observed, possibly due to preprocessing steps that amplify the effect of noisy pixels. #model #metrics
+- Started reviewing the 'dev/ddarolfi/chevron-cubeten-ml-experimental' code branch. This branch is currently pending customer feedback. More attention should be given to the first 30 seconds of the pull when the sample begins moving. There's increased variability in the initial slope region, which may be unexpected. #customer 
+
+
+TODO:
+- Review the 'dev/ddarolfi/chevron-cubeten-ml-experimental' code branch and investigate the cause of the variability in the first 30 seconds.
