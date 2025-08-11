@@ -24,6 +24,5 @@ https://github.com/jamieli11/work-daily-log/issues/2
 Through detailed comparison of left and right edges, discovered that edge point selection algorithms are directly related to measurement variability. The centerline-based approach did not resolve the variability issue, indicating the root cause lies in the edge point extraction algorithm limitations.
 
 ### Next Week Plan ###
-- Continue analyzing edge point extraction algorithm improvement strategies
+- Analyze edge point extraction algorithm improvement strategies
 - Implement detection strategy optimization for marker deformation scenarios
-- Validate impact of improved solutions on measurement stability
