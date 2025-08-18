@@ -35,7 +35,8 @@ Through detailed comparison of left and right edges, discovered that edge point 
 
 ### Results & Findings
 - The variability in elongation may be caused by instability in the ML detect model's output results. https://github.com/jamieli11/work-daily-log/issues/2#issuecomment-3197335872
-- The existing code generates segmentation masks for markers using the releases-3.0.9 codebase, but release 3.0.9 cannot handle halo scenarios effectively. This leads to inaccurate input data for the ML model, resulting in a "garbage in, garbage out" situation. 
+- The existing code generates segmentation masks for markers using the releases-3.0.9 codebase, but release 3.0.9 cannot handle halo scenarios effectively. This leads to inaccurate input data for the ML model, resulting in a "garbage in, garbage out" situation. https://github.com/jamieli11/work-daily-log/issues/3#issue-3331144047
+https://github.com/jamieli11/work-daily-log/issues/4#issue-3331196391
 - The current documentation and data generation code do not separate training and test sets, creating a risk of data leakage. 
 - The ML detect model is missing the model weights file, making it unable to fine-tune and requiring retraining from scratch.
 - Two possible optimization approaches for improving detection accuracy in halo scenarios: 1) Optimize existing data generation code; 2) Use alternative ML models with appropriate data generators. Currently focusing on approach 1, as modifying the existing code effectively optimizes release 3.0.9, which can benefit both production code and the ML model. 
