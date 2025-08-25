@@ -45,3 +45,14 @@ https://github.com/jamieli11/work-daily-log/issues/4#issue-3331196391
 ### Next Week Plan
 - Continue optimizing detection for halo scenarios
 - Complete learning the calibration code section
+-------------------------
+## Aug 18,2025 - Aug 22, 2025
+### Work Overview
+- Enhanced data generation algorithm with multi-resolution pyramid support, utilizing higher resolution inputs and leveraging known left_mark and right_mark position information to create ROI constraints for precise halo edge detection using Sobel operators and marker contour generation. https://github.com/jamieli11/work-daily-log/issues/4#issuecomment-3221187020
+- Finish reading the calibration code section.
+
+### Results & Findings
+- Successfully reduced halo interference and improved data quality. Some minor halo fragments still appear in challenging scenarios, but the algorithm is ready for large-scale data generation and model training.
+
+### Next Week Plan
+- Planned to deliver an initial model trained on small dataset this week, followed by full-scale dataset model delivery in the future.
