@@ -56,3 +56,22 @@ https://github.com/jamieli11/work-daily-log/issues/4#issue-3331196391
 
 ### Next Week Plan
 - Planned to deliver an initial model trained on small dataset this week, followed by full-scale dataset model delivery in the future.
+-------------------------
+## Aug 25,2025 - Aug 29, 2025
+## Work Overview
+- Implemented edge-detector-based halo removal method into the data generation pipeline
+- Applied SAM2 as an alternative data cleaning approach
+- Cleaned chevron data (8988 frames total) and fine-tuned the detection model
+- Wrote [inference code](https://github.com/LabsCubed-Inc/ML_marker_detect/blob/dev/jamie/inference.py) for the detection model, enabling it to run on unlabeled data
+- Evaluated the updated model performances using labsvision code
+
+## Results & Findings
+- The edge-detector-based halo removal method shows inconsistent performance. Halos are not effectively removed in some cases, and hallowed regions in the mark mask occur frequently (particularly in the brightest area of the mark). https://github.com/jamieli11/work-daily-log/issues/4#issuecomment-3246076352
+- SAM2 demonstrates strong performance in cleaning haloed data, though it occasionally failed. https://github.com/jamieli11/work-daily-log/issues/3#issuecomment-3246152768
+- Completed model training for 40 epochs in total. The model achieved optimal performance at epoch 40 (based on visualized inference results on the test set), with significant improvement in halo-related issues. https://github.com/jamieli11/work-daily-log/issues/4#issuecomment-3246208941
+
+## Next Week Plan
+- Build TensorRT engine and test it on chip
+- Generate additional training data to further fine-tune the ML detection model.
+- Refactor ML detection code for improved modularity and scalability
+- Implement comprehensive evaluation metrics for the ML detector and develop more detailed user documentation
