@@ -71,7 +71,5 @@ https://github.com/jamieli11/work-daily-log/issues/4#issue-3331196391
 - Completed model training for 40 epochs in total. The model achieved optimal performance at epoch 40 (based on visualized inference results on the test set), with significant improvement in halo-related issues. https://github.com/jamieli11/work-daily-log/issues/4#issuecomment-3246208941
 
 ## Next Week Plan
-- Build TensorRT engine and test it on chip
-- Generate additional training data to further fine-tune the ML detection model.
 - Refactor ML detection code for improved modularity and scalability
 - Implement comprehensive evaluation metrics for the ML detector and develop more detailed user documentation
